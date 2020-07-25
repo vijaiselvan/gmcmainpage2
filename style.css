@@ -17,9 +17,13 @@ body {
 .line {
     overflow: hidden;
     position: absolute;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    background-image: linear-gradient(
+            rgba(213, 131, 24, 0.7),
+            rgba(0, 0, 0, 0.9)
+        ),
         url('./hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -81,5 +85,11 @@ body {
     }
     100% {
         transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}
+
+@media (max-width: 480px) {
+    .line {
+        height: 95vh;
     }
 }

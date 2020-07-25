@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-body,
-#html {
+body {
+    margin-top: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,10 +15,8 @@ body,
 }
 
 .line {
-    overflow: hidden;
     position: absolute;
     width: 100%;
-    overflow: hidden;
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
         url('./hero.jpg');
